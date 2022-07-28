@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://ragibn5:NMd.181792@practicecluster.vrwwj.mongodb.net/?retryWrites=true&w=majority
+      database: "pdb"
+      port: 27017
+
+server:
+  port: 8082
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      # todo change url if required
+      defaultZone: http://localhost:8761/eureka/
